@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7,14 +8,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <div class="container">
     <div class="tile"><img src="img/sample.jpg" alt=""></div>
     <div class="tile"><img src="img/sample.jpg" alt=""></div>
     <div class="tile"><img src="img/sample.jpg" alt=""></div>
     <div class="tile"><img src="img/sample.jpg" alt=""></div>
+    <div class="number">0</div>
+    <div class="number">0</div>
+    <div class="number">0</div>
+    <div class="number">0</div>
+  </div>
+  <div class="buttons">
+    <p><span id="tiles-remaining">0</span>/48</p>
+    <button onclick="drawTiles()"><span class="iconify" data-icon="mdi-cards-outline"></span><span>Pesca</span></button>
+    <button onclick="reset()" id="reset"><span class="iconify" data-icon="mdi-undo"></span><span>Reset</span></button>
   </div>
 </body>
+
 </html>
